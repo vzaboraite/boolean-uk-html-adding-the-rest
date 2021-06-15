@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: grid;
+
+  grid-template:
+    "header header header header header" 50px
+    ". user-info content-feed news-sidebar ." 1fr /
+    1fr 200px 1fr 300px 1fr;
+
+  gap: 5px;
+}
+
+.element-border {
+  border: 1px dotted black;
+  gap: 5px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.user-info {
+  grid-area: user-info;
+}
+
+.content-feed {
+  grid-area: content-feed;
+}
+
+.news-sidebar {
+  grid-area: news-sidebar;
+}
