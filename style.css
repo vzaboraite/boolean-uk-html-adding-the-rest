@@ -29,7 +29,7 @@
 }
 
 .user-info > * {
-  background-color: beige;
+  background-color: rgb(122, 122, 11);
 
   border: 1px dotted black;
   gap: 5px;
@@ -39,12 +39,37 @@
   grid-area: user-info;
 
   display: grid;
-  grid-template-columns: repeat(200px, minmax(auto, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 200px));
   grid-auto-rows: auto;
+}
+
+.content-feed > * {
+  background-color: blanchedalmond;
+
+  border: 1px dotted black;
+  gap: 5px;
 }
 
 .content-feed {
   grid-area: content-feed;
+
+  display: grid;
+  grid-template-rows: 80px auto;
+  grid-template-columns: minmax(200px, 1fr);
+}
+
+.cards li {
+  border: 1px dotted black;
+  gap: 5px;
+
+  list-style-type: none;
+}
+
+.cards {
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
 }
 
 .news-sidebar {
