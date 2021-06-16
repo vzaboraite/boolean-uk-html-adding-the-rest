@@ -1,3 +1,61 @@
-body {
-  background-color: burlywood;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+  border: 2px dotted lightcoral;
+}
+
+.search-bar {
+  width: 100px;
+
+  border: 1px solid black;
+  background-color: #eee;
+}
+
+.grid-container > * {
+  border: 2px dotted lightblue;
+}
+
+.grid-container {
+  height: 100vh;
+
+  display: grid;
+  grid-template:
+    "server-sidebar channel-sidebar main-view" 1fr /
+    80px 200px 1fr;
+}
+
+.server-sidebar {
+  grid-area: server-sidebar;
+}
+
+.channel-sidebar {
+  grid-area: channel-sidebar;
+}
+
+.main-view {
+  grid-area: main-view;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.three-column-grid__exapnd-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  gap: 4px;
+}
+
+.six-column-grid__expand-four {
+  display: grid;
+  grid-template-columns: repeat(3, auto) 1fr repeat(2, auto);
+
+  gap: 4px;
 }
