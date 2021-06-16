@@ -1,9 +1,11 @@
+/* reset default styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* general rules for classes/elements */
 .nav-icons li {
   list-style-type: none;
 }
@@ -36,6 +38,7 @@
   border: 2px dotted lightblue;
 }
 
+/* main container for all the page layout */
 .grid-container {
   height: 100vh;
 
@@ -45,6 +48,7 @@
     auto 200px 1fr;
 }
 
+/* first column of the .grid-container */
 .server-sidebar {
   grid-area: server-sidebar;
 
@@ -58,6 +62,7 @@
   gap: 4px;
 }
 
+/* second column of the .grid-container */
 .channel-sidebar {
   grid-area: channel-sidebar;
 }
@@ -67,6 +72,7 @@
   grid-template-rows: auto 150px 1fr auto;
 }
 
+/* third column of the .grid-container */
 .main-view {
   grid-area: main-view;
 }
